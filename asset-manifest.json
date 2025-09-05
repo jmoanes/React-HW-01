@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jmoanes/React-HW-01/static/css/main.7943c563.css",
+    "main.js": "/jmoanes/React-HW-01/static/js/main.c7485294.js",
+    "index.html": "/jmoanes/React-HW-01/index.html",
+    "main.7943c563.css.map": "/jmoanes/React-HW-01/static/css/main.7943c563.css.map",
+    "main.c7485294.js.map": "/jmoanes/React-HW-01/static/js/main.c7485294.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7943c563.css",
+    "static/js/main.c7485294.js"
+  ]
+}
