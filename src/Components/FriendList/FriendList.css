@@ -1,0 +1,65 @@
+.friend-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 280px;
+  margin: 30px auto;
+  padding: 0;
+  list-style: none;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.friend-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 15px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+
+.friend-list li:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.friend-list li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ddd;
+}
+
+.friend-list li span {
+  flex: 1;
+  font-size: 0.95rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Status Dot on the left of avatar */
+.friend-list li::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+  flex-shrink: 0;
+  background-color: gray; /* default */
+}
+
+.friend-list li.online::before {
+  background-color: #4CAF50; /* green dot for online */
+}
+
+.friend-list li.offline::before {
+  background-color: #F44336; /* red dot for offline */
+}
